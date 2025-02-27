@@ -8,8 +8,8 @@
 
 body {
   font-family: sans-serif;
-  background-color: #121212;
-  color: #e6e5e5;
+  background-color: #B3D8A8;
+  color: #FBFFE4;
   line-height: 1.6;
   display: inherit;
   min-height: 100vh;
@@ -20,12 +20,17 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
 }
+
+.profile-content {
+  display: flex;
+  margin: 2rem 2rem 0rem 0rem;
+}
+
 
 /* --- Sidebar --- */
 .sidebar {
-  background-color: #3f3f3f;
+  background-color: #3D8D7A;
   padding: 2rem;
   width: 300px;
   display: flex;
@@ -40,7 +45,7 @@ body {
   height: 140px;
   border-radius: 50%;
   margin-bottom: 1rem;
-  background-color: #575757;
+  background-color: #3D8D7A;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -57,7 +62,7 @@ body {
 }
 
 .sidebar p {
-  color: #aaa;
+  color: #FBFFE4;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -72,10 +77,10 @@ body {
   margin-right: 0.5rem;
   width: 1.2em;
   text-align: center;
-  color: #83cbff;
+  color: #FBFFE4;
 }
 .contact-info a {
-  color: #dddbdb;
+  color: #FBFFE4;
   text-decoration: none;
 }
 
@@ -91,31 +96,32 @@ body {
 
 /* --- Main Content --- */
 .main-content {
-  flex: 1; /* Take up remaining space */
+  /* width: 100%; */
   padding: 2rem 2rem 2rem 0rem;
 }
 
 .about-content {
   flex: 1; /* Take up remaining space */
-  padding: 2rem 2rem 2rem 0rem;
 }
 
-.main-content section {
-  margin-bottom: 2rem;
-  background-color: #3f3f3f;
+.main-content section, .profile-content{
+  background-color: #3D8D7A;
   padding: 20px;
   border-radius: 15px;
 }
+.main-content section{
+  margin-bottom: 2rem;
+}
 
-.main-content h2 {
+.main-content h2, .about-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #575757;
+  border-bottom: 2px solid #B3D8A8;
   padding-bottom: 0.5rem;
   border-radius: 15px;
 }
 
-.main-content p {
+.main-content p , .about-content p{
   margin-bottom: 1rem;
 }
 
@@ -125,9 +131,9 @@ body {
   gap: 1rem;
 }
 
-.grid-item {
+.grid-item, .about-content {
   /* background-color: #595858; */
-  background-color: #4b4b4a;
+  background-color: #3f9c86;
   padding: 1.5rem;
   border-radius: 8px;
 }
@@ -178,7 +184,7 @@ body {
 
 /*--- Mobile Responsiveness ---*/
 @media (max-width: 767px) {
-  .container {
+  .container, .profile-content {
     flex-direction: column;
   }
   .sidebar {
@@ -188,6 +194,16 @@ body {
 
   .main-content {
     padding: 2rem;
+  }
+
+  .profile-content {
+    margin: 2rem 2rem 0 ;
+  }
+}
+
+@media (max-width: 430px) {
+  .sidebar {
+    padding: 0 0 2rem 0;
   }
 }
 
