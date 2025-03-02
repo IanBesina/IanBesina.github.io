@@ -44,7 +44,6 @@ body {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  margin-bottom: 1rem;
   background-color: #3D8D7A;
   overflow: hidden;
   display: flex;
@@ -57,7 +56,6 @@ body {
 
 .sidebar h1 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
   text-align: center;
 }
 
